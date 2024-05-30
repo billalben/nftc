@@ -114,6 +114,9 @@ body {
   color: var(--spanish-gray);
   font-size: 1.6rem;
 }
+body.nav-active {
+  overflow-y: hidden;
+}
 ::-webkit-scrollbar {
   width: 15px;
 }
