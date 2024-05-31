@@ -401,3 +401,26 @@ body.nav-active {
   font-size: var(--fs-5);
   --padding: 8px 15px;
 }
+
+/* -------- #TOP SELLER -------- */
+.top-seller .section-title {
+  margin-block-end: 50px;
+}
+.top-seller-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.top-seller-card .card-avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.top-seller-card .card-title {
+  color: var(--cultured);
+  font-size: 1.6rem;
+  font-weight: var(--fw-600);
+  margin-block-end: 5px;
+}
+.top-seller-card .card-title > a:is(:hover, :focus) {
+  color: var(--han-purple);
+}
