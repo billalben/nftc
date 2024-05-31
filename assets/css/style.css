@@ -108,6 +108,7 @@ html {
   font-family: var(--ff-poppins);
   font-size: 10px;
   scroll-behavior: smooth;
+  scroll-padding-block-start: 50px;
 }
 body {
   background-color: var(--rich-black-fogra-39);
@@ -451,4 +452,24 @@ body.nav-active {
 }
 .collection-card:is(:hover, :focus) .card-title {
   color: var(--han-purple);
+}
+
+/* -------- #INSTRUCTION -------- */
+.instruction {
+  padding-block-end: var(--section-padding);
+}
+.instruction .section-title {
+  margin-block-end: 50px;
+}
+.instruction-icon ion-icon {
+  font-size: 5rem;
+  color: var(--han-purple);
+  --ionicon-stroke-width: 25px;
+}
+.instruction-title {
+  color: var(--white);
+  font-family: var(--ff-jost);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  margin-block: 15px;
 }
