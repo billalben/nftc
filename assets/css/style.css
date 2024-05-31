@@ -424,3 +424,31 @@ body.nav-active {
 .top-seller-card .card-title > a:is(:hover, :focus) {
   color: var(--han-purple);
 }
+
+/* -------- #COLLECTION -------- */
+.collection-card {
+  text-align: center;
+}
+.collection-card .card-banner {
+  aspect-ratio: 1 / 0.75;
+}
+.collection-card .card-avatar {
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+  margin-block: -40px 15px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 3px solid var(--white_20);
+  padding: 5px;
+  transition: var(--transition-2);
+}
+.collection-card .card-avatar img {
+  border-radius: inherit;
+}
+.collection-card:is(:hover, :focus) .card-avatar {
+  box-shadow: 0 5px 10px hsla(223, 82%, 30%, 0.5);
+}
+.collection-card:is(:hover, :focus) .card-title {
+  color: var(--han-purple);
+}
