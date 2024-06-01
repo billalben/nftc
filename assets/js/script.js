@@ -31,3 +31,19 @@ const elemArr = [overlay, menuCloseBtn, menuOpenBtn];
  */
 addEventOnElements(elemArr, "click", toggleNavbar);
 addEventOnElements(navbarLinks, "click", toggleNavbar);
+
+/**
+ * add active class on header
+ */
+
+const header = document.querySelector("[data-header]");
+window.addEventListener("scroll", function () {
+  header.classList.toggle("active", window.scrollY > 150);
+});
+
+/**
+ * Dynamic Year Copyright
+ */
+
+const year = new Date().getFullYear();
+document.querySelector(".copyright-year").textContent = year;
